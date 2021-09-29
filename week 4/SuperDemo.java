@@ -74,16 +74,15 @@ class SuperDemo {
 	public static void main(String[] args) {
 
 		BoxWeight box01 = new BoxWeight(10,32,23,5);
-		Box box02 = new Box();
 
 		double vol = box01.volume();
 		System.out.println("Box1 vol: " + vol);
 		System.out.println("Box1 mass: " + box01.weight);
 
-		box02 = box01;
+		BoxWeight box02 = new BoxWeight();
 
 		vol = box02.volume();
 		System.out.println("Box2 vol: " + vol);
-		//System.out.println("Box2 mass: " + box02.weight);
+		System.out.println("Box2 mass: " + box02.weight);
 	}
 }
