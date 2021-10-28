@@ -29,7 +29,7 @@ class UseClass{
 		int ans = 42;
 
 		System.out.println(StaticDemo.callMe(ans));
-		method(42);
+		method(ans);
 		
 	}
 }

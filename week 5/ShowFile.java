@@ -10,13 +10,16 @@ class ShowFile {
 		}
 
 		try{
-			FileInputStream fin = new FileInputStream(args[0])
+			FileInputStream fin = new FileInputStream(args[0]);
 
 			do {
 				i = fin.read();
 
-				if( i != -1) System.out.println((char)i);
-			}while(i != -1)
+				if( i != -1) System.out.print((char)i);
+			}while(i != -1);
+
+			fin.close();
+
 		}catch(FileNotFoundException e){
 			System.out.println("File not found");
 		}catch (IOException e){
